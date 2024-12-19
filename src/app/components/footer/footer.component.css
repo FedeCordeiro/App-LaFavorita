@@ -1,0 +1,11 @@
+footer {
+  background-color: #dc3545;  /* bg-danger */
+  bottom: 0;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+}
+
+.main-content {
+  padding-bottom: 80px;  /* Ajusta el valor según la altura del footer */
+}

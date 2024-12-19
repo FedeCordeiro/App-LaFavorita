@@ -1,0 +1,31 @@
+<div class="container my-5">
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+      <div *ngFor="let producto of paginatedProductos" class="col">
+        <div class="card h-100 border-0 shadow-sm rounded-4">
+          <img [src]="producto.imagen" class="card-img-top rounded-top-4" [alt]="producto.nombre" style="object-fit: cover; height: 180px;">
+          <div class="card-body d-flex flex-column text-center">
+            <h5 class="card-title fw-bold text-secondary">{{ producto.nombre }}</h5>
+            <p class="card-text flex-grow-1 text-muted">{{ producto.descripcion }}</p>
+            <p class="fw-bold mb-3 text-dark">Precio: ${{ producto.precio }}</p>
+            <button class="btn btn-outline-dark rounded-pill mt-auto">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Controles de paginación -->
+    <nav class="mt-5">
+      <ul class="pagination justify-content-center">
+        <li class="page-item" [class.disabled]="currentPage === 1">
+          <button class="page-link rounded-pill text-dark" (click)="previousPage()">❮</button>
+        </li>
+        <li class="page-item" *ngFor="let page of totalPages; let i = index" [class.active]="currentPage === i + 1">
+          <button class="page-link rounded-circle mx-1 fw-bold text-dark" (click)="goToPage(i + 1)">{{ i + 1 }}</button>
+        </li>
+        <li class="page-item" [class.disabled]="currentPage === totalPages.length">
+          <button class="page-link rounded-pill text-dark" (click)="nextPage()">❯</button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  

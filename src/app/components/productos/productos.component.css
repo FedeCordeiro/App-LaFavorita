@@ -1,0 +1,53 @@
+/* General */
+body {
+    background-color: #f8f9fa;
+  }
+  
+  /* Card Styling */
+  .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    font-size: 1.1rem;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+  }
+  
+  /* Button Styling */
+  .btn-outline-dark {
+    color: #5a5a5a;
+    border-color: #5a5a5a;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn-outline-dark:hover {
+    background-color: #5a5a5a;
+    color: #fff;
+  }
+  
+  /* Pagination Styling */
+  .pagination .page-link {
+    color: #5a5a5a;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .pagination .page-link:hover {
+    background-color: #5a5a5a;
+    color: #fff;
+  }
+  
+  .pagination .page-item.active .page-link {
+    background-color: #5a5a5a;
+    color: #fff;
+  }
+  

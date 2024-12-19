@@ -1,0 +1,9 @@
+body {
+    background-image: url("./assets/img/fondo1.jpg") !important;     
+    background-repeat: repeat;  
+    background-attachment: fixed;  
+    background-position: center;   
+    margin: 0;                     
+    padding: 0;                    
+  }
+  
