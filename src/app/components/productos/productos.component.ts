@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ProductosComponent {
   productos = [
-    { id: 1, nombre: 'Pan de papa', descripcion: 'Pan de papa, ideal para preparar hamburguesas.', precio: 300, imagen: 'assets/img/productos/panpapa.jpg' },
+    { id: 1, nombre: 'Pan de papa', descripcion: 'Pan de papa, ideal para preparar hamburguesas.', precio: 300, imagen: 'assets/img/productos/panpapa.png' },
     { id: 2, nombre: 'Pebete', descripcion: 'Pan alargado de textura blanda, utilizado en sándwiches.', precio: 300, imagen: 'assets/img/productos/pebete.webp' },
     { id: 3, nombre: 'Pan de molde', descripcion: 'Pan en rebanadas, disponible en diferentes variedades.', precio: 4500, imagen: 'assets/img/productos/molde.jpg' },
     { id: 4, nombre: 'Budines', descripcion: 'Budines esponjosos en distintos sabores y presentaciones.', precio: 2500, imagen: 'assets/img/productos/budin.jpg' },
