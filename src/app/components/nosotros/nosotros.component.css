@@ -4,11 +4,11 @@ body {
 
 /* Sección principal */
 h2 {
-  color: #333;
   font-size: 2rem;
 }
 
 p {
+  color: white !important;
   font-size: 1.4rem !important;
   line-height: 1.6;
 }
@@ -22,6 +22,11 @@ p {
 .card-img-top {
   height: 80px;
   object-fit: contain;
+  fill: white !important;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 /* Texto centrado */
@@ -31,8 +36,7 @@ p {
 
 /* Secciones */
 section {
-  background-color: #fff;
-  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.796) !important;
   padding: 2rem;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
 }
@@ -44,7 +48,12 @@ section {
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-20px);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.col-lg-4 {
+  display: flex;
+  justify-content: center;
 }
 }

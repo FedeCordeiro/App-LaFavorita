@@ -1,19 +1,22 @@
 .container {
-    background-color: #f8f9fa; /* Color de fondo suave */
-    padding: 50px 0; /* Espaciado superior e inferior */
+    background-color: rgba(0, 0, 0, 0.796) !important;
     border-radius: 20px;
   }
   
   h2, h3 {
-    color: #333; /* Color de los títulos */
+    color: white;
   }
   
   a {
-    color: #007bff; /* Color de los enlaces */
+    color: white; 
   }
   
   a:hover {
     text-decoration: underline;
+  }
+
+  li {
+    color: white;
   }
   
   iframe {

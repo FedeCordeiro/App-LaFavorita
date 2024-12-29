@@ -6,6 +6,8 @@ body {
   /* Card Styling */
   .card {
     transition: transform 0.3s, box-shadow 0.3s;
+    background-color: rgba(0, 0, 0, 0.796) !important;
+    color: white !important;
   }
   
   .card:hover {
@@ -14,10 +16,12 @@ body {
   }
   
   .card-title {
+    color: white !important;
     font-size: 1.1rem;
   }
   
   .card-text {
+    color: white !important;
     font-size: 0.9rem;
   }
   
@@ -49,5 +53,11 @@ body {
   .pagination .page-item.active .page-link {
     background-color: #5a5a5a;
     color: #fff;
+  }
+
+  @media (min-width: 1200px) {
+    .card:hover {
+      transform: translateY(-15px);
+    }
   }
   
