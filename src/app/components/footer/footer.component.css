@@ -9,3 +9,11 @@ footer {
 .main-content {
   padding-bottom: 80px;  /* Ajusta el valor según la altura del footer */
 }
+
+img {
+  transition: 0.3s;
+}
+
+img:hover {
+  filter:drop-shadow(5px 5px 5px black);
+}

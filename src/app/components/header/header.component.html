@@ -1,16 +1,24 @@
 <nav class="navbar navbar-expand-lg bg-danger text-white">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link mx-4" routerLink="/">Inicio</a>
-          <a class="nav-link mx-4" routerLink="/productos">Productos</a>
-          <a class="nav-link mx-4" routerLink="/nosotros">Nosotros</a>
-          <a class="nav-link mx-4" routerLink="/contacto">Contacto</a>
-        </div>
+  <div class="container-fluid">
+    <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup" #navbarCollapse>
+      <div class="navbar-nav">
+        <a class="nav-link mx-4" routerLink="/" (click)="closeMenu(navbarCollapse)">INICIO</a>
+        <a class="nav-link mx-4" routerLink="/productos" (click)="closeMenu(navbarCollapse)">PRODUCTOS</a>
+        <a class="nav-link mx-4" routerLink="/nosotros" (click)="closeMenu(navbarCollapse)">NOSOTROS</a>
+        <a class="nav-link mx-4" routerLink="/contacto" (click)="closeMenu(navbarCollapse)">CONTACTO</a>
       </div>
     </div>
-  </nav>
-  
+  </div>
+</nav>

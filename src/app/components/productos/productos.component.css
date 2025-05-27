@@ -46,12 +46,12 @@ body {
   }
   
   .pagination .page-link:hover {
-    background-color: #5a5a5a;
+    background-color: #dc3545;
     color: #fff;
   }
   
   .pagination .page-item.active .page-link {
-    background-color: #5a5a5a;
+    background-color: #dc3545;
     color: #fff;
   }
 
